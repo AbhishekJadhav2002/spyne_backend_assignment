@@ -11,7 +11,8 @@ const connectRabbitMQ = async () => {
         await channel.assertQueue('user.follow');
         await channel.assertQueue('user.unfollow');
     } catch (error) {
-        console.error('Failed to connect to RabbitMQ:', error);
+        console.error('❗ Failed to connect to RabbitMQ:', error);
+        process.exit(1);
     }
 };
 

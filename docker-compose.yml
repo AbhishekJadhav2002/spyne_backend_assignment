@@ -66,8 +66,6 @@ services:
     volumes:
       - ./gateway-service:/usr/spyne_backend_assignment/gateway-service
     depends_on:
-      - mongo
-      - rabbitmq
       - user-service
       - discussion-service
       - notification-service

@@ -20,6 +20,7 @@ const connectRabbitMQ = async () => {
         await channel.assertQueue('discussion.likeComment');
     } catch (error) {
         console.error('❗ Failed to connect to RabbitMQ:', error);
+        process.exit(1);
     }
 };
 
