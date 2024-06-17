@@ -68,7 +68,7 @@ message DiscussionListResponse {
 message EmptyResponse {}
 
 message Discussion {
-    string id = 1;
+    string _id = 1;
     string userId = 2;
     string text = 3;
     string image = 4;
@@ -81,7 +81,7 @@ message Discussion {
 }
 
 message Comment {
-    string id = 1;
+    string _id = 1;
     string discussionId = 2;
     string userId = 3;
     string text = 4;
